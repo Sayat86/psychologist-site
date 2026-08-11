@@ -23,3 +23,64 @@ window.addEventListener(
 
 
 handleHeaderScroll();
+
+/*
+ * ========================================
+ * WORK ACCORDION
+ * ========================================
+ */
+
+const workItems = document.querySelectorAll(".work-item");
+
+
+workItems.forEach((item) => {
+
+    const button = item.querySelector(
+        ".work-item__button"
+    );
+
+
+    button.addEventListener("click", () => {
+
+        const isActive = item.classList.contains("active");
+
+
+        /*
+         * Close all other items
+         */
+
+        workItems.forEach((otherItem) => {
+
+            otherItem.classList.remove("active");
+
+            const otherButton =
+                otherItem.querySelector(
+                    ".work-item__button"
+                );
+
+            otherButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        });
+
+
+        /*
+         * Open selected item
+         */
+
+        if (!isActive) {
+
+            item.classList.add("active");
+
+            button.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+
+        }
+
+    });
+
+});

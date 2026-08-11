@@ -34,8 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
    */
 
   const animatedElements = document.querySelectorAll(
-    ".about__image-wrapper, .about__content, .approach__header, .approach__intro, .approach-step",
-  );
+    `
+    .about__image-wrapper,
+    .about__content,
+    .approach__header,
+    .approach__intro,
+    .approach-step,
+    .work__header,
+    .work__intro,
+    .work-item
+    `
+);
 
   if (!animatedElements.length) {
     return;
