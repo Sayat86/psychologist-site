@@ -42,7 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .approach-step,
     .work__header,
     .work__intro,
-    .work-item
+    .work-item,
+    .return__image-wrapper,
+    .return__content
     `
 );
 
