@@ -1,0 +1,129 @@
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    font-family: var(--font-main);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+
+    color: var(--color-text);
+    background-color: var(--color-bg);
+
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* =========================
+   CONTAINER
+   ========================= */
+
+.container {
+    width: min(
+        100% - (var(--container-padding) * 2),
+        var(--container-width)
+    );
+
+    margin-inline: auto;
+}
+
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+.section {
+    padding-block: var(--section-padding);
+}
+
+
+/* =========================
+   SECTION LABEL
+   ========================= */
+
+.section__label {
+    margin-bottom: var(--spacing-md);
+
+    font-size: var(--font-size-small);
+    font-weight: 500;
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    color: var(--color-accent);
+}
+
+
+/* =========================
+   SECTION TITLE
+   ========================= */
+
+.section__title {
+    max-width: 900px;
+
+    font-size: clamp(42px, 5vw, 76px);
+    font-weight: 400;
+
+    line-height: var(--line-height-heading);
+    letter-spacing: -0.03em;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 56px;
+    padding: 0 32px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    border-radius: 100px;
+
+    transition:
+        background-color var(--transition-normal),
+        color var(--transition-normal),
+        transform var(--transition-normal);
+}
+
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+
+.button--primary {
+    color: var(--color-white);
+    background-color: var(--color-text);
+}
+
+
+.button--primary:hover {
+    background-color: var(--color-accent-dark);
+}
+
+
+.button--secondary {
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+
+.button--secondary:hover {
+    color: var(--color-white);
+    background-color: var(--color-text);
+}
+
+/* =========================
+   BODY LOCK
+   ========================= */
+
+body.menu-open {
+    overflow: hidden;
+}

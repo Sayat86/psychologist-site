@@ -1,0 +1,73 @@
+:root {
+
+    /* =========================
+       COLORS
+       ========================= */
+
+    --color-bg: #F4F0E8;
+    --color-bg-light: #FAF8F3;
+    --color-bg-dark: #25231F;
+
+    --color-text: #292722;
+    --color-text-light: #716D64;
+
+    --color-accent: #A88C62;
+    --color-accent-dark: #806B4B;
+
+    --color-white: #FFFFFF;
+    --color-border: rgba(41, 39, 34, 0.15);
+
+
+    /* =========================
+       TYPOGRAPHY
+       ========================= */
+
+    --font-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --font-size-body: 18px;
+    --font-size-small: 14px;
+
+    --line-height-body: 1.6;
+    --line-height-heading: 1.15;
+
+
+    /* =========================
+       CONTAINER
+       ========================= */
+
+    --container-width: 1240px;
+
+    --container-padding: 40px;
+
+
+    /* =========================
+       SPACING
+       ========================= */
+
+    --section-padding: 140px;
+
+    --spacing-xs: 10px;
+    --spacing-sm: 20px;
+    --spacing-md: 40px;
+    --spacing-lg: 70px;
+    --spacing-xl: 100px;
+
+
+    /* =========================
+       BORDER RADIUS
+       ========================= */
+
+    --radius-small: 4px;
+    --radius-medium: 10px;
+    --radius-large: 20px;
+
+
+    /* =========================
+       TRANSITIONS
+       ========================= */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.4s ease;
+    --transition-slow: 0.8s ease;
+
+}
