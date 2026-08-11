@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    /*
+     * ========================================
+     * HERO ANIMATION
+     * ========================================
+     */
+
     const heroElements = [
         document.querySelector(".hero__subtitle"),
         document.querySelector(".hero__title"),
@@ -14,20 +20,61 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        element.style.opacity = "0";
-        element.style.transform = "translateY(25px)";
-
-        element.style.transition = `
-            opacity 0.8s ease,
-            transform 0.8s ease
-        `;
+        element.classList.add("animate-on-load");
 
         setTimeout(() => {
 
-            element.style.opacity = "1";
-            element.style.transform = "translateY(0)";
+            element.classList.add("is-visible");
 
         }, 250 + (index * 180));
+
+    });
+
+
+    /*
+     * ========================================
+     * SCROLL ANIMATIONS
+     * ========================================
+     */
+
+    const animatedElements = document.querySelectorAll(
+        ".about__image-wrapper, .about__content"
+    );
+
+
+    if (!animatedElements.length) {
+        return;
+    }
+
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+
+            entries.forEach((entry) => {
+
+                if (!entry.isIntersecting) {
+                    return;
+                }
+
+
+                entry.target.classList.add("is-visible");
+
+                observer.unobserve(entry.target);
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+
+    animatedElements.forEach((element) => {
+
+        element.classList.add("animate-on-scroll");
+
+        observer.observe(element);
 
     });
 

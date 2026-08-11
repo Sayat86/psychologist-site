@@ -127,3 +127,59 @@ body {
 body.menu-open {
     overflow: hidden;
 }
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+
+.animate-on-load {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+.animate-on-load.is-visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+.animate-on-scroll {
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* Respect reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .animate-on-load,
+    .animate-on-scroll {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+    }
+
+}
