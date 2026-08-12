@@ -47,7 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .return__content,
     .consultation__top,
     .consultation__title,
-    .consultation__bottom
+    .consultation__bottom,
+    .testimonials__top,
+    .testimonials__header,
+    .testimonials__slider,
+    .testimonials__navigation
     `
 );
 
