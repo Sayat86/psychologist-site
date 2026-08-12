@@ -51,7 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .testimonials__top,
     .testimonials__header,
     .testimonials__slider,
-    .testimonials__navigation
+    .testimonials__navigation,
+    .faq__top,
+    .faq__intro,
+    .faq__list
     `
 );
 

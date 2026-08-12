@@ -30,14 +30,7 @@ handleHeaderScroll();
  * ========================================
  */
 
-const workItems = document.querySelectorAll(".work-item");
 
-
-workItems.forEach((item) => {
-
-    const button = item.querySelector(
-        ".work-item__button"
-    );
 
 
     button.addEventListener("click", () => {
