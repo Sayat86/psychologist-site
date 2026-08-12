@@ -772,7 +772,7 @@
       </section>
 
       <!-- CONTACTS -->
-       
+
       <section class="section contacts" id="contacts">
         <div class="container">
           <div class="contacts__top">
@@ -822,6 +822,20 @@
 
             <div class="contacts__form-wrapper">
               <form class="contact-form" id="contact-form">
+                
+                <!-- Honeypot: обычный пользователь это поле не видит -->
+                <div class="form-honeypot" aria-hidden="true">
+                  <label for="website"> Не заполняйте это поле </label>
+
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                  />
+                </div>
+
                 <div class="form-field">
                   <label for="name"> Ваше имя </label>
 
