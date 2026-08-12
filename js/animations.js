@@ -54,7 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .testimonials__navigation,
     .faq__top,
     .faq__intro,
-    .faq__list
+    .faq__list,
+    .contacts__top,
+    .contacts__intro,
+    .contacts__form-wrapper
     `
 );
 

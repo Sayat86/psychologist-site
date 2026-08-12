@@ -772,19 +772,118 @@
       </section>
 
       <!-- CONTACTS -->
+       
       <section class="section contacts" id="contacts">
-        <div class="container contacts__container">
-          <p class="section__label">Первый шаг</p>
+        <div class="container">
+          <div class="contacts__top">
+            <p class="section__label">Контакты</p>
 
-          <h2 class="section__title">Не обязательно знать, с чего начать.</h2>
+            <span class="contacts__number"> 08 </span>
+          </div>
 
-          <p class="contacts__description">
-            Достаточно почувствовать, что дальше так нельзя.
-          </p>
+          <div class="contacts__layout">
+            <!-- LEFT -->
 
-          <a href="#" class="button button--primary">
-            Записаться на консультацию
-          </a>
+            <div class="contacts__intro">
+              <h2 class="contacts__title">
+                Давайте
+                <em>поговорим.</em>
+              </h2>
+
+              <p class="contacts__text">
+                Если вы чувствуете, что готовы к разговору — оставьте заявку. Я
+                свяжусь с вами и мы обсудим формат и удобное время.
+              </p>
+
+              <div class="contacts__links">
+                <a
+                  href="https://wa.me/77000000000"
+                  class="contacts__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>WhatsApp</span>
+                  <span>↗</span>
+                </a>
+
+                <a
+                  href="https://t.me/username"
+                  class="contacts__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Telegram</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- FORM -->
+
+            <div class="contacts__form-wrapper">
+              <form class="contact-form" id="contact-form">
+                <div class="form-field">
+                  <label for="name"> Ваше имя </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Как к вам обращаться?"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="phone"> Телефон </label>
+
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+7 (___) ___-__-__"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="format"> Формат консультации </label>
+
+                  <select id="format" name="format" required>
+                    <option value="" selected disabled>Выберите формат</option>
+
+                    <option value="online">Онлайн</option>
+
+                    <option value="offline">Офлайн</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="message"> Сообщение </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Если хотите, расскажите немного о том, с чем обращаетесь"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="button contact-form__button">
+                  Отправить заявку
+
+                  <span>↗</span>
+                </button>
+
+                <p class="contact-form__note">
+                  Нажимая кнопку, вы соглашаетесь с политикой
+                  конфиденциальности.
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
