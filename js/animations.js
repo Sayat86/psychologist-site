@@ -44,7 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .work__intro,
     .work-item,
     .return__image-wrapper,
-    .return__content
+    .return__content,
+    .consultation__top,
+    .consultation__title,
+    .consultation__bottom
     `
 );
 
