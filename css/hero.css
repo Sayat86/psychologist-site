@@ -143,7 +143,7 @@
             var(--color-bg) 0%,
             transparent 25%
         ),
-        url("../images/hero/hero.jpg");
+        url("../images/hero/aibaniz-2.jpg");
 
     background-size: cover;
     background-position: center;
@@ -184,42 +184,82 @@
 
     .hero {
         min-height: 100svh;
+
+        background-color: var(--color-bg);
     }
 
 
     .hero__container {
         min-height: 100svh;
 
+        display: flex;
+
         align-items: flex-end;
 
         padding-top: 120px;
-        padding-bottom: 70px;
+        padding-bottom: 48px;
     }
 
 
     .hero__content {
+        position: relative;
+        z-index: 3;
+
         width: 100%;
     }
 
 
+    /* =========================
+       SUBTITLE
+       ========================= */
+
+    .hero__subtitle {
+        margin-bottom: 20px;
+
+        font-size: 12px;
+
+        letter-spacing: 0.16em;
+    }
+
+
+    /* =========================
+       TITLE
+       ========================= */
+
     .hero__title {
         max-width: 650px;
 
-        font-size: clamp(42px, 11vw, 64px);
+        font-size: clamp(
+            38px,
+            10.5vw,
+            58px
+        );
+
+        line-height: 1.06;
 
         letter-spacing: -0.04em;
     }
 
 
-    .hero__description {
-        max-width: 500px;
+    /* =========================
+       DESCRIPTION
+       ========================= */
 
-        margin-top: 28px;
-        margin-bottom: 32px;
+    .hero__description {
+        max-width: 480px;
+
+        margin-top: 24px;
+        margin-bottom: 28px;
 
         font-size: 16px;
+
+        line-height: 1.55;
     }
 
+
+    /* =========================
+       HERO IMAGE
+       ========================= */
 
     .hero::after {
         top: 0;
@@ -232,20 +272,30 @@
 
         border-radius: 0;
 
-        opacity: 0.20;
+        opacity: 0.28;
 
         background-image:
             linear-gradient(
                 180deg,
-                var(--color-bg) 0%,
-                rgba(244, 240, 232, 0.65) 45%,
+                rgba(244, 240, 232, 0.15) 0%,
+                rgba(244, 240, 232, 0.30) 30%,
+                rgba(244, 240, 232, 0.78) 72%,
                 var(--color-bg) 100%
             ),
             url("../images/hero/aibaniz-2.jpg");
 
-        background-position: center;
+        background-size: cover;
+
+        background-position:
+            center top;
+
+        pointer-events: none;
     }
 
+
+    /* =========================
+       DECORATIVE ELEMENT
+       ========================= */
 
     .hero::before {
         width: 300px;
@@ -253,6 +303,8 @@
 
         right: -100px;
         bottom: -80px;
+
+        opacity: 0.7;
     }
 
 }
