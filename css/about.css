@@ -280,3 +280,61 @@
     margin-top: 38px;
   }
 }
+
+/* =========================
+   EDUCATION
+   ========================= */
+
+.about__education {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  margin-top: 40px;
+  padding-top: 24px;
+
+  border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.12));
+}
+
+.about__education-label {
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  opacity: 0.5;
+}
+
+.about__education-institution {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.about__education-document {
+  font-size: 14px;
+  line-height: 1.6;
+
+  opacity: 0.65;
+}
+
+@media (max-width: 600px) {
+
+  .about__education {
+    margin-top: 32px;
+    padding-top: 20px;
+  }
+
+  .about__education-label {
+    font-size: 10px;
+  }
+
+  .about__education-institution {
+    font-size: 15px;
+  }
+
+  .about__education-document {
+    font-size: 13px;
+  }
+
+}

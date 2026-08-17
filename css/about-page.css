@@ -741,3 +741,167 @@ transition: none;
 transform: none;
 }
 }
+
+/* =========================
+   EDUCATION
+   ========================= */
+
+.about-page-education {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about-page-education__layout {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.3fr) minmax(0, 1fr) minmax(220px, 0.65fr);
+  gap: 60px;
+  align-items: start;
+}
+
+.about-page-education__image-wrapper {
+  width: 100%;
+  max-width: 360px;
+  margin-left: auto;
+
+  overflow: hidden;
+}
+
+.about-page-education__image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+
+  filter: saturate(0.85);
+}
+
+.about-page-education__content {
+  max-width: 720px;
+}
+
+.about-page-education__institution {
+  margin: 0 0 24px;
+
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.about-page-education__content .about-page-section__title {
+  margin-bottom: 32px;
+}
+
+.about-page-education__description {
+  max-width: 620px;
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.about-page-education__credential {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  max-width: 620px;
+
+  margin-top: 48px;
+  padding-top: 24px;
+
+  border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.12));
+}
+
+.about-page-education__credential-label {
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  opacity: 0.55;
+}
+
+.about-page-education__credential-value {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   EDUCATION — TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .about-page-education {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .about-page-education__layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-page-education__content {
+    max-width: 680px;
+  }
+
+  .about-page-education__image-wrapper {
+  max-width: 420px;
+  margin-left: 0;
+}
+
+}
+
+
+/* =========================
+   EDUCATION — MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .about-page-education {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .about-page-education__layout {
+    gap: 25px;
+  }
+
+  .about-page-education__institution {
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+
+  .about-page-education__content .about-page-section__title {
+    margin-bottom: 24px;
+  }
+
+  .about-page-education__description {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .about-page-education__credential {
+    margin-top: 35px;
+    padding-top: 20px;
+  }
+
+  .about-page-education__credential-label {
+    font-size: 10px;
+  }
+
+  .about-page-education__credential-value {
+    font-size: 14px;
+  }
+
+  .about-page-education__image-wrapper {
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+}
