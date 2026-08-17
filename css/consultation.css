@@ -1,0 +1,285 @@
+/* =========================
+   CONSULTATION
+   ========================= */
+
+.consultation {
+  position: relative;
+
+  background-color: var(--color-bg-dark);
+
+  color: var(--color-white);
+
+  overflow: hidden;
+}
+
+/* =========================
+   TOP
+   ========================= */
+
+.consultation__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 110px;
+}
+
+.consultation__top .section__label {
+  color: var(--color-accent);
+}
+
+.consultation__number {
+  font-size: 14px;
+
+  letter-spacing: 0.12em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* =========================
+   TITLE
+   ========================= */
+
+.consultation__title {
+  max-width: 1000px;
+
+  margin-bottom: 120px;
+
+  font-size: clamp(55px, 7vw, 105px);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.055em;
+}
+
+.consultation__title em {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-weight: 400;
+
+  color: var(--color-accent);
+}
+
+/* =========================
+   BOTTOM
+   ========================= */
+
+.consultation__bottom {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: clamp(50px, 10vw, 160px);
+
+  align-items: end;
+}
+
+.consultation__text {
+  max-width: 430px;
+}
+
+.consultation__text p {
+  margin-bottom: 20px;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.consultation__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   DETAILS
+   ========================= */
+
+.consultation__details {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.consultation__detail {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding: 22px 0 30px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.consultation__detail:nth-child(2) {
+  padding-left: 35px;
+
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.consultation__detail-label {
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.consultation__detail-value {
+  font-size: 18px;
+
+  color: var(--color-white);
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.consultation__button {
+  grid-column: 1 / -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-top: 35px;
+
+  padding: 20px 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  color: var(--color-white);
+
+  background: transparent;
+}
+
+.consultation__button span {
+  font-size: 20px;
+
+  transition: transform var(--transition-normal);
+}
+
+.consultation__button:hover {
+  color: var(--color-bg-dark);
+
+  background-color: var(--color-white);
+
+  border-color: var(--color-white);
+}
+
+.consultation__button:hover span {
+  transform: translate(4px, -4px);
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+  .consultation__title {
+    font-size: clamp(52px, 8vw, 78px);
+  }
+
+  .consultation__bottom {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+  }
+
+  .consultation__text {
+    max-width: 520px;
+  }
+}
+
+/* =========================
+   CONSULTATION ANIMATION
+   ========================= */
+
+.consultation__top,
+.consultation__title,
+.consultation__bottom {
+  opacity: 0;
+
+  transform: translateY(35px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+}
+
+.consultation__title {
+  transition-delay: 0.1s;
+}
+
+.consultation__bottom {
+  transition-delay: 0.2s;
+}
+
+.consultation__top.is-visible,
+.consultation__title.is-visible,
+.consultation__bottom.is-visible {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+  .consultation {
+    padding-block: 90px;
+  }
+
+  .consultation__top {
+    margin-bottom: 65px;
+  }
+
+  .consultation__title {
+    margin-bottom: 70px;
+
+    font-size: clamp(45px, 11vw, 60px);
+
+    line-height: 1;
+  }
+
+  .consultation__text p {
+    font-size: 16px;
+  }
+
+  .consultation__bottom {
+    gap: 55px;
+  }
+
+  .consultation__details {
+    grid-template-columns: 1fr;
+  }
+
+  .consultation__detail:nth-child(2) {
+    padding-left: 0;
+
+    border-left: none;
+  }
+
+  .consultation__button {
+    margin-top: 30px;
+
+    padding: 18px 20px;
+
+    font-size: 14px;
+  }
+}
