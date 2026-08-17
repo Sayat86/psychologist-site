@@ -57,9 +57,34 @@ document.addEventListener("DOMContentLoaded", () => {
     .faq__list,
     .contacts__top,
     .contacts__intro,
-    .contacts__form-wrapper
-    `
-);
+    .contacts__form-wrapper,
+
+    /* ABOUT PAGE */
+  .about-page-hero__top,
+  .about-page-hero__content,
+  .about-page-intro__image-wrapper,
+  .about-page-intro__content,
+  .about-page-section__header,
+  .about-page-section__content,
+  .about-page-space__layout,
+  .about-page-approach__layout,
+  .about-page-return__content,
+  .about-page-cta__content,
+
+    /* STORY PAGE */
+  .story-page-hero__top,
+  .story-page-hero__content,
+  .story-page-image__wrapper,
+  .story-page-section__top,
+  .story-page-place__layout,
+  .story-page-return__layout,
+  .story-page-years__layout,
+  .story-page-changed__layout,
+  .story-page-return-self__content,
+  .story-page-final__content,
+  .story-page-cta__content
+    `,
+  );
 
   if (!animatedElements.length) {
     return;
