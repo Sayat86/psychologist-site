@@ -1,45 +1,50 @@
-const menuToggle = document.getElementById("menuToggle");
-const navigation = document.getElementById("navigation");
+document.addEventListener("componentsLoaded", () => {
+  const menuToggle = document.getElementById("menuToggle");
+  const navigation = document.getElementById("navigation");
 
-const navigationLinks = document.querySelectorAll(".navigation__link");
+  if (!menuToggle || !navigation) {
+    return;
+  }
 
+  const navigationLinks = navigation.querySelectorAll(
+    ".navigation__link, .navigation__cta",
+  );
 
-menuToggle.addEventListener("click", () => {
-
+  menuToggle.addEventListener("click", () => {
     const isOpen = navigation.classList.toggle("active");
 
     menuToggle.classList.toggle("active");
 
     menuToggle.setAttribute(
-        "aria-expanded",
-        isOpen
+      "aria-expanded",
+      String(isOpen),
     );
 
-    document.body.classList.toggle(
-        "menu-open",
-        isOpen
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Закрыть меню" : "Открыть меню",
     );
 
-});
+    document.body.classList.toggle("menu-open", isOpen);
+  });
 
-
-navigationLinks.forEach((link) => {
-
+  navigationLinks.forEach((link) => {
     link.addEventListener("click", () => {
+      navigation.classList.remove("active");
 
-        navigation.classList.remove("active");
+      menuToggle.classList.remove("active");
 
-        menuToggle.classList.remove("active");
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false",
+      );
 
-        menuToggle.setAttribute(
-            "aria-expanded",
-            "false"
-        );
+      menuToggle.setAttribute(
+        "aria-label",
+        "Открыть меню",
+      );
 
-        document.body.classList.remove(
-            "menu-open"
-        );
-
+      document.body.classList.remove("menu-open");
     });
-
+  });
 });
