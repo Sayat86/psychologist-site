@@ -358,3 +358,157 @@
     margin-top: 20px;
   }
 }
+
+/* =========================
+   2GIS REVIEWS
+   ========================= */
+
+.testimonials__external {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-border);
+  box-sizing: border-box;
+}
+
+.testimonials__external-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.testimonials__external-label {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.testimonials__external-source {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.testimonials__external-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.testimonials__external-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  padding: 32px;
+  border: 1px solid var(--color-border);
+  background: var(--color-background);
+  color: inherit;
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.testimonials__external-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-text);
+}
+
+.testimonials__external-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.testimonials__external-stars {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.testimonials__external-date {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.testimonials__external-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.testimonials__external-author strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.testimonials__external-author span {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.testimonials__external-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.testimonials__external-link {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+@media (max-width: 768px) {
+
+  .testimonials__external {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 60px;
+    padding-top: 30px;
+  }
+
+  .testimonials__external-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonials__external-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .testimonials__external-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px;
+  }
+
+  .testimonials__external-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonials__external-text {
+    overflow-wrap: anywhere;
+  }
+
+}
