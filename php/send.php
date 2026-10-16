@@ -157,14 +157,23 @@ if (
 
 if (
     !$validOrigin &&
-    $referer !== '' &&
-    str_starts_with(
-        $referer,
-        $allowedOrigin
-    )
+    $referer !== ''
 ) {
 
-    $validOrigin = true;
+    $refererParts = parse_url($referer);
+
+    if (
+        isset(
+            $refererParts['scheme'],
+            $refererParts['host']
+        ) &&
+        $refererParts['scheme'] === 'https' &&
+        $refererParts['host'] === 'aibaniz.kz'
+    ) {
+
+        $validOrigin = true;
+
+    }
 
 }
 
@@ -201,7 +210,7 @@ if (!is_dir($rateLimitDirectory)) {
 
     @mkdir(
         $rateLimitDirectory,
-        0755,
+        0700,
         true
     );
 
