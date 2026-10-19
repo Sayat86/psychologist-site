@@ -308,3 +308,27 @@
     margin-top: 38px;
   }
 }
+
+/* =========================
+   RETURN ACTION
+   ========================= */
+
+.return__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.return__actions .return__link {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .return__actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

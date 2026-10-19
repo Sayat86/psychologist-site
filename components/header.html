@@ -1,5 +1,6 @@
 <header class="header" id="header">
   <div class="container header__container">
+
     <!-- LOGO -->
 
     <a href="index.html" class="logo" aria-label="Айбаниз Велиева — главная">
@@ -8,22 +9,35 @@
 
     <!-- DESKTOP / MOBILE NAVIGATION -->
 
-    <nav class="navigation" id="navigation">
-      <a href="index.html#about" class="navigation__link"> Обо мне </a>
+    <nav class="navigation" id="navigation" aria-label="Основная навигация">
 
-      <a href="index.html#approach" class="navigation__link"> Подход </a>
-
-      <a href="index.html#work" class="navigation__link">
-        С чем можно прийти
+      <a href="index.html#hero" class="navigation__link">
+        Главная
       </a>
 
-      <a href="index.html#return" class="navigation__link"> Возвращение </a>
+      <a href="index.html#work" class="navigation__link">
+        Запросы
+      </a>
 
-      <a href="index.html#testimonials" class="navigation__link"> Отзывы </a>
+      <a href="index.html#approach" class="navigation__link">
+        Мой подход
+      </a>
 
-      <a href="index.html#faq" class="navigation__link"> Вопросы </a>
+      <a href="index.html#consultation" class="navigation__link">
+        Консультация
+      </a>
 
-      <a href="index.html#contacts" class="navigation__link"> Контакты </a>
+      <a href="index.html#return" class="navigation__link">
+        Обо мне
+      </a>
+
+      <a href="index.html#testimonials" class="navigation__link">
+        Отзывы
+      </a>
+
+      <a href="index.html#faq" class="navigation__link">
+        Вопросы
+      </a>
 
       <!-- MOBILE CTA -->
 
@@ -31,6 +45,7 @@
         Записаться
         <span>↗</span>
       </a>
+
     </nav>
 
     <!-- DESKTOP CTA -->
@@ -48,10 +63,12 @@
       type="button"
       aria-label="Открыть меню"
       aria-expanded="false"
+      aria-controls="navigation"
     >
       <span></span>
       <span></span>
       <span></span>
     </button>
+
   </div>
 </header>
