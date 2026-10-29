@@ -548,9 +548,9 @@ margin-bottom: 75px;
 .about-page-intro__layout {
 grid-template-columns: 1fr 1fr;
 
-```
+
 gap: 60px;
-```
+
 
 }
 
@@ -563,9 +563,9 @@ height: 560px;
 .about-page-approach__layout {
 grid-template-columns: 1fr;
 
-```
+
 gap: 60px;
-```
+
 
 }
 
@@ -603,9 +603,9 @@ margin-bottom: 65px;
 .about-page-hero__title {
 font-size: clamp(42px, 11vw, 58px);
 
-```
+
 line-height: 1.02;
-```
+
 
 }
 
@@ -613,9 +613,9 @@ line-height: 1.02;
 margin-top: 35px;
 margin-left: 0;
 
-```
+
 font-size: 16px;
-```
+
 
 }
 
@@ -630,9 +630,9 @@ margin-bottom: 55px;
 .about-page-intro__layout {
 grid-template-columns: 1fr;
 
-```
+
 gap: 55px;
-```
+
 
 }
 
@@ -649,9 +649,9 @@ max-width: none;
 .about-page-return__text p {
 font-size: 16px;
 
-```
+
 line-height: 1.7;
-```
+
 
 }
 
@@ -662,9 +662,9 @@ gap: 45px;
 .about-page-section__title {
 font-size: clamp(40px, 10.5vw, 56px);
 
-```
+
 line-height: 1.04;
-```
+
 
 }
 
@@ -680,20 +680,20 @@ font-size: 27px;
 .about-page-return__title {
 margin-bottom: 45px;
 
-```
+
 font-size: clamp(42px, 10.5vw, 58px);
-```
+
 
 }
 
 .about-page-return__final {
 margin-top: 55px;
 
-```
+
 padding-top: 30px;
 
 font-size: 17px;
-```
+
 
 }
 
@@ -708,18 +708,18 @@ padding-block: 100px;
 .about-page-cta__title {
 margin-bottom: 35px;
 
-```
+
 font-size: clamp(42px, 10.5vw, 58px);
-```
+
 
 }
 
 .about-page-cta__text {
 margin-bottom: 35px;
 
-```
+
 font-size: 16px;
-```
+
 
 }
 
