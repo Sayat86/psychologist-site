@@ -15,7 +15,7 @@ return [
      * Security
      */
 
-    'allowed_origin' => 'https://YOUR-DOMAIN.kz',
+    'allowed_origin' => 'https://aibaniz-metapro.kz',
 
     'rate_limit_seconds' => 60,
 

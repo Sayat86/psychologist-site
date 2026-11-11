@@ -168,7 +168,7 @@ if (
             $refererParts['host']
         ) &&
         $refererParts['scheme'] === 'https' &&
-        $refererParts['host'] === 'aibaniz.kz'
+        $refererParts['host'] === 'aibaniz-metapro.kz'
     ) {
 
         $validOrigin = true;

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourdomain.kz/sitemap.xml
+Sitemap: https://aibaniz-metapro.kz/sitemap.xml

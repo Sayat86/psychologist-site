@@ -167,7 +167,7 @@
 
   margin: 0;
 
-  font-size: clamp(27px, 3.2vw, 44px);
+  font-size: clamp(22px, 2.2vw, 30px);
 
   font-weight: 400;
 
@@ -349,7 +349,7 @@
   }
 
   .testimonial__text {
-    font-size: 25px;
+    font-size: 19px;
 
     line-height: 1.3;
   }
